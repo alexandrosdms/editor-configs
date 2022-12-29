@@ -4,15 +4,18 @@ Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-let g:airline_theme='one'
-
 set background=dark
 colorscheme gruvbox 
+hi Normal guibg=NONE ctermbg=NONE
+
 set number
+set relativenumber
 set cursorline
-set tabstop=4
+set tabstop=4 shiftwidth=4 expandtab
 set expandtab
 set scrolloff=10
+set colorcolumn=80
+set signcolumn=yes
 set nowrap
 set incsearch
 set ignorecase
